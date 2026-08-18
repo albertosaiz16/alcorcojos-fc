@@ -3,6 +3,19 @@ import pandas as pd
 
 CLAUSE_FLOOR = 1_000_000
 
+import math
+
+
+def _limpiar(obj):
+    """Convierte NaN/Inf en None. JSON.parse del navegador no los acepta."""
+    if isinstance(obj, dict):
+        return {k: _limpiar(v) for k, v in obj.items()}
+    if isinstance(obj, list):
+        return [_limpiar(v) for v in obj]
+    if isinstance(obj, float) and not math.isfinite(obj):
+        return None
+    return obj
+
 
 def variaciones(jugadores, n=15):
     """Mayores subidas y bajadas de valor del día."""
@@ -106,7 +119,7 @@ def alertas(jugadores):
 
 def compute_all(jugadores, mercado_df, standings, saldo, meta):
     """Ejecuta todas las métricas y devuelve el payload del dashboard."""
-    return {
+    return _limpiar({
         "meta": {**meta, "saldo": saldo},
         "variaciones": variaciones(jugadores),
         "clausulas": clausulas(jugadores, saldo),
@@ -121,4 +134,4 @@ def compute_all(jugadores, mercado_df, standings, saldo, meta):
             "lesionados": int((jugadores["estado"] == "injury").sum()),
             "dudas": int((jugadores["estado"] == "doubt").sum()),
         },
-    }
+    })

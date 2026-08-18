@@ -21,8 +21,8 @@
       "posicion": "MC",
       "valor": 44000000,
       "delta_valor": 44000000.0,
-      "delta_pct": NaN,
-      "dueno": NaN,
+      "delta_pct": null,
+      "dueno": null,
       "es_mio": false
     },
     {
@@ -32,7 +32,7 @@
       "valor": 40703000,
       "delta_valor": 881000.0,
       "delta_pct": 0.022123449349605747,
-      "dueno": NaN,
+      "dueno": null,
       "es_mio": false
     },
     {
@@ -42,7 +42,7 @@
       "valor": 20340000,
       "delta_valor": 835000.0,
       "delta_pct": 0.04280953601640605,
-      "dueno": NaN,
+      "dueno": null,
       "es_mio": false
     },
     {
@@ -52,7 +52,7 @@
       "valor": 19463000,
       "delta_valor": 654000.0,
       "delta_pct": 0.03477058854803552,
-      "dueno": NaN,
+      "dueno": null,
       "es_mio": false
     },
     {
@@ -62,7 +62,7 @@
       "valor": 14316000,
       "delta_valor": 636000.0,
       "delta_pct": 0.04649122807017544,
-      "dueno": NaN,
+      "dueno": null,
       "es_mio": false
     },
     {
@@ -72,7 +72,7 @@
       "valor": 16953000,
       "delta_valor": 625000.0,
       "delta_pct": 0.03827780499755022,
-      "dueno": NaN,
+      "dueno": null,
       "es_mio": false
     },
     {
@@ -82,7 +82,7 @@
       "valor": 15571000,
       "delta_valor": 620000.0,
       "delta_pct": 0.041468798073707444,
-      "dueno": NaN,
+      "dueno": null,
       "es_mio": false
     },
     {
@@ -114,7 +114,7 @@
       "valor": 19115000,
       "delta_valor": -609000.0,
       "delta_pct": -0.03087609004258771,
-      "dueno": NaN,
+      "dueno": null,
       "es_mio": false
     },
     {
@@ -124,7 +124,7 @@
       "valor": 34594000,
       "delta_valor": -584000.0,
       "delta_pct": -0.01660128489396782,
-      "dueno": NaN,
+      "dueno": null,
       "es_mio": false
     },
     {
@@ -134,7 +134,7 @@
       "valor": 28360000,
       "delta_valor": -553000.0,
       "delta_pct": -0.019126344550894063,
-      "dueno": NaN,
+      "dueno": null,
       "es_mio": false
     },
     {
@@ -144,7 +144,7 @@
       "valor": 37490000,
       "delta_valor": -540000.0,
       "delta_pct": -0.014199316329213778,
-      "dueno": NaN,
+      "dueno": null,
       "es_mio": false
     },
     {
@@ -154,7 +154,7 @@
       "valor": 25242000,
       "delta_valor": -536000.0,
       "delta_pct": -0.02079292419892932,
-      "dueno": NaN,
+      "dueno": null,
       "es_mio": false
     },
     {
@@ -174,7 +174,7 @@
       "valor": 19316000,
       "delta_valor": -528000.0,
       "delta_pct": -0.026607538802660754,
-      "dueno": NaN,
+      "dueno": null,
       "es_mio": false
     }
   ],
