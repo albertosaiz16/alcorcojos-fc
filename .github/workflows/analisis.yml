@@ -1,0 +1,49 @@
+name: analisis
+
+# claude-code-action solo admite eventos de issue/PR y workflow_dispatch,
+# no push. Por eso el analisis vive en su propio workflow y se dispara
+# cuando el pipeline termina de escribir data/brief.json.
+on:
+  workflow_run:
+    workflows: ['pipeline']
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  redactar:
+    if: github.event_name == 'workflow_dispatch' ||
+        github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+
+      - uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          claude_args: '--max-turns 8 --allowedTools Read,Write,Edit'
+          prompt: |
+            Lee data/brief.json y ANALISTA.md.
+            Escribe el analisis del dia en docs/analisis.md siguiendo
+            exactamente el formato de ANALISTA.md. No hagas nada mas:
+            no ejecutes comandos, no toques otros ficheros.
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+
+      - name: Regenerar sitio con el analisis
+        run: python -m pipeline.render
+
+      - name: Commit
+        run: |
+          git config user.name  "alcorcojos-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add docs
+          git diff --staged --quiet || git commit -m "analisis $(date +%F)"
+          git push

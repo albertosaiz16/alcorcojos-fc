@@ -10,34 +10,26 @@ permissions:
   pages: write
   id-token: write
 
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
       - run: pip install -r requirements.txt
 
-      # Etapa determinista: produce docs/data.json y data/brief.json
+      # Metricas deterministas: docs/data.json + data/brief.json
       - name: Calcular metricas
         run: python -m pipeline.run
 
-      # Etapa narrativa: Claude Code lee el brief y escribe el analisis.
-      # Usa tu suscripcion via CLAUDE_CODE_OAUTH_TOKEN, no la API de pago.
-      - name: Redactar analisis
-        uses: anthropics/claude-code-action@v1
-        with:
-          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-          claude_args: '--max-turns 6'
-          prompt: |
-            Lee data/brief.json y las instrucciones de ANALISTA.md.
-            Escribe el analisis del dia en docs/analisis.md siguiendo
-            exactamente el formato indicado. No ejecutes nada mas.
-
-      # Render final, ya con el analisis dentro
+      # Render con el analisis que hubiera de la ejecucion anterior.
+      # El analisis lo escribe el workflow analisis.yml, aparte.
       - name: Generar sitio
         run: python -m pipeline.render
 
