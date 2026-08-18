@@ -1,0 +1,62 @@
+name: pipeline
+
+on:
+  push:
+    paths: ['data/raw/**']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+
+      # Etapa determinista: produce docs/data.json y data/brief.json
+      - name: Calcular metricas
+        run: python -m pipeline.run
+
+      # Etapa narrativa: Claude Code lee el brief y escribe el analisis.
+      # Usa tu suscripcion via CLAUDE_CODE_OAUTH_TOKEN, no la API de pago.
+      - name: Redactar analisis
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          claude_args: '--max-turns 6'
+          prompt: |
+            Lee data/brief.json y las instrucciones de ANALISTA.md.
+            Escribe el analisis del dia en docs/analisis.md siguiendo
+            exactamente el formato indicado. No ejecutes nada mas.
+
+      # Render final, ya con el analisis dentro
+      - name: Generar sitio
+        run: python -m pipeline.render
+
+      - name: Commit
+        run: |
+          git config user.name  "alcorcojos-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add docs data/history.parquet data/brief.json
+          git diff --staged --quiet || git commit -m "pipeline $(date +%F)"
+          git push
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+    steps:
+      - uses: actions/deploy-pages@v4
