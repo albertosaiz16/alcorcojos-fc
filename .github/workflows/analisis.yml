@@ -3,6 +3,11 @@ name: analisis
 # claude-code-action solo admite eventos de issue/PR y workflow_dispatch,
 # no push. Por eso el analisis vive en su propio workflow y se dispara
 # cuando el pipeline termina de escribir data/brief.json.
+#
+# Este workflow tambien despliega: el index.html lleva el analisis
+# incrustado, asi que hay que volver a publicar despues de regenerarlo o
+# Pages seguiria sirviendo el artefacto de pipeline, generado cuando el
+# analisis del dia todavia no existia.
 on:
   workflow_run:
     workflows: ['pipeline']
@@ -12,6 +17,12 @@ on:
 permissions:
   contents: write
   id-token: write
+  pages: write
+
+# Mismo grupo que pipeline: evita que los dos despliegues se pisen.
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
   redactar:
@@ -52,3 +63,15 @@ jobs:
           git add docs
           git diff --staged --quiet || git commit -m "analisis $(date +%F)"
           git push origin HEAD:main
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy:
+    needs: redactar
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+    steps:
+      - uses: actions/deploy-pages@v4
