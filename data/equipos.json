@@ -1,0 +1,23 @@
+{
+  "_comentario": "Rellena los nombres. Los ids no cambian durante la temporada. Si aparece un id nuevo, compute_all lo avisara en validaciones.",
+  "1": "Athletic Club",
+  "2": "Atlético de Madrid",
+  "3": "FC Barcelona",
+  "4": "Betis",
+  "5": "Celta de Vigo",
+  "6": "Deportivo de A Coruña",
+  "8": "Espanyol",
+  "9": "Getafe",
+  "12": "Levante",
+  "13": "Málaga",
+  "14": "Rayo Vallecano",
+  "15": "Real Madrid",
+  "16": "Real Sociedad",
+  "17": "Sevilla FC",
+  "19": "Valencia",
+  "20": "Villarreal",
+  "23": "Elche",
+  "48": "Alavés",
+  "50": "Osasuna",
+  "1490": "Racing de Santander"
+}
