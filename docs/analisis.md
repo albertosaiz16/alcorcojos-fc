@@ -1,34 +1,44 @@
 ## Titular
-Tu plantilla pierde valor (-515.000 €) y suma 4 jugadores tocados —dos con estado real de baja, Luis Rioja en duda y Kike García lesionado— mientras el mercado general se mueve sin dirección clara (250 suben, 248 bajan, 15 igual).
+El mercado cierra en unas 16,1 horas para los 40 candidatos que tengo delante; el mejor descuento entre los que están `ok` es Hamza Abdelkarim (DL, -9,04%, 5.261.000 € por un jugador de 5.784.000 €).
 
-## Mercado
-Universo de 514 jugadores: 362 libres, 36 lesionados, 21 en duda. El reparto de subidas y bajadas está casi empatado (250 vs 248), no hay tendencia de fondo hoy.
+## Decisión
+Capitán: Alemão (DL). Es el único delantero sano de la plantilla (Kike García está `injury`); hizo 5 puntos en su único partido y vuelve a jugar en casa ante Alavés. No hay dato de probabilidad de gol en el brief, así que la posición es el mejor proxy disponible.
 
-Mayores subidas, ninguna es tuya: Ayoze Pérez +658.000 € (4,60%), David Larrubia +653.000 € (3,85%), Tyrhys Dolan +646.000 € (4,15%), Juan Iglesias +628.000 € (3,23%). Entre ellas hay dos jugadores de rivales: Orri Óskarsson (+548.000 €, de Mateo) y Lorenzo Amatucci (+533.000 €, de Martín).
+No fichar hoy pese al cierre de mercado: entre los jugadores `ok` el mayor descuento visible es del 9,04% (Hamza Abdelkarim) y solo hay 1 jornada de datos — no justifica gastar de los 94.587.000 € de saldo. El descuento más alto de la lista (Marash Kumbulla, -26,67%) es sobre un jugador `injury`, no una ganga.
 
-Mayores bajadas: Leandro Cabrera -813.000 € (-4,10%) y Héctor Bellerín -787.000 € (-4,12%) encabezan la caída, ninguno de dueño conocido. Entre los que sí tienen dueño: Quilindschy Hartman -664.000 € (Marcos) y, la que te afecta directamente, Luis Rioja -571.000 € (-4,02%), tuyo y en duda para esta jornada.
+No rescindir cláusulas hoy: `clausulas_top` está ordenada por coste, no por calidad ("clausula (media no fiable con 1 jornadas)"), y las medias no son fiables todavía. No hay ningún candidato ahí que destaque por rendimiento.
 
-## Oportunidades
-Cláusulas: 137 jugadores tienen dueño, 136 de ellos con cláusula asequible ahora mismo, la más barata a 1.000.000 €. Las más destacadas por rendimiento sobre coste:
-- Oriol Rey (MC, William): cláusula 1.543.500 €, media 3.
-- Nacho Pérez (DF, Pablo): cláusula 5.155.500 €, media 6.
-- Unai Núñez (DF, William): cláusula 6.979.500 €, media 7.
-- Pelayo Fernández (DF, Mateo) y Paco Cortés (MC, Marcos): cláusula mínima de 1.000.000 € cada uno, media 1 en ambos casos.
+No alinear a Kike García (injury) ante el Real Madrid mientras mantenga ese estado. Vigilar a Luis Rioja (doubt) antes de recibir al Celta de Vigo: si sigue en duda cerca del partido, no capitanearlo ni forzar su titularidad.
 
-En el mercado de fichajes (40 jugadores, 40 asequibles, 10 libres), los mayores descuentos: Marash Kumbulla (DF) a 1.287.000 €, 26,67% de descuento sobre valor, pero en estado lesión. Fran Pérez (MC) a 1.331.000 €, 11,27% de descuento, media 2, sin incidencias. Abde Rebbach (MC) a 5.453.000 €, 10,74% de descuento, media 5.
+## Ventana de mercado
+Los 40 candidatos del mercado cierran en ~16,1 horas (veo 12 de esos 40):
+- Marash Kumbulla (DF) — descuento 26,67%, estado `injury`, no libre.
+- Marcão (DF) — descuento 10,84%, estado `other`, no libre.
+- Hamza Abdelkarim (DL) — descuento 9,04%, estado `ok`, no libre.
+- Asier Villalibre (DL) — descuento 6,31%, estado `ok`, no libre.
+- Eduardo Camavinga (MC) — descuento 1,77%, estado `ok`, no libre.
+- Sin descuento (precio = valor): Christantus Uche (DL, injury, libre), Gavi (MC, ok, libre), Rubén García (MC, ok, libre), Gabriel Moscardo (MC, ok, libre), Rodrigo Mendoza (MC, ok, libre), Carlos Martín (MC, ok, libre), Yvan Neyou (MC, other, no libre).
 
-## Tu plantilla
-Valor total: 103.762.000 €, con caída de -515.000 € respecto al día anterior. Riesgo de cláusula acumulado: 157.034.500 €, muy por encima del valor de la plantilla. Saldo disponible: 94.587.000 €.
+## Nuestra plantilla
+Estados distintos de `ok` (4 de 15):
+- Luis Rioja (MC) — `doubt`. Rival: Celta de Vigo, en casa. Valor 13.620.000 €, cláusula 20.430.000 €.
+- Kike García (DL) — `injury`. Rival: Real Madrid, en casa. Valor 5.882.000 €, cláusula 8.823.000 €.
+- Martín Krug (DF) — `other`. Rival: Osasuna, fuera. Valor 477.000 €, cláusula 1.000.000 €.
+- Alejandro Iturbe (PT) — `other`. Rival: FC Barcelona, en casa. Valor 347.000 €, cláusula 1.000.000 €.
 
-4 jugadores tocados (alertas):
-- Luis Rioja (MC): duda, valor 13.620.000 €.
-- Kike García (DL): lesión, valor 5.882.000 €.
-- Martín Krug (DF): estado "other", valor 477.000 €.
-- Alejandro Iturbe (PT): estado "other", valor 347.000 €.
+Exposición a cláusula: los 15 están sin blindar (`sin_blindar: 15`). El más expuesto por valor es Augusto Batalla, según `mas_expuesto` (cláusula 40.479.000 €, sobrecoste 1,5×, el mínimo posible).
 
-En la clasificación de liga tu equipo aparece en la posición 10, con el mismo valor de plantilla (103.762.000 €) y 15 jugadores. Todos los managers, incluido el tuyo, figuran con 0 puntos en la tabla de liga: la jornada todavía no computa a nivel de clasificación, aunque algunos jugadores de tu plantilla ya registran puntos individuales (Alemão 5, Augusto Batalla 3, Lucas Cepeda 2).
+## La liga
+Posición 10ª de 10, pero todos los mánagers tienen 0 puntos: la jornada no ha consolidado y esa posición es provisional. Por valor de plantilla vamos 6º de 10 (`rank_valor`), con 103.762.000 €. El líder en valor es Gonzalo (`rank_valor` 1), con 187.291.000 €.
+
+De los jugadores con dueño, 25 de 138 están blindados, pero el brief no me dice cuáles en los datos que tengo delante (los de `clausulas_top` están todos sin blindar). Dos jugadores en manos de rivales suben por encima del umbral: Orri Óskarsson (DL, dueño Mateo) +548.000 € (+2,89%) y Lorenzo Amatucci (MC, dueño Martín) +533.000 € (+3,17%).
+
+## Calendario
+Varios jugadores nuestros reciben a rivales fuertes esta jornada: Lucas Cepeda y Alejandro Iturbe (este último `other`) juegan en casa ante el FC Barcelona (valor medio de su plantilla 28.257.153 €); Kike García (`injury`) recibe al Real Madrid, el equipo con mayor valor medio de plantilla del calendario que tengo delante (29.573.230 €). Álex Pastor visita al Atlético de Madrid (valor medio 18.654.964 €).
 
 ## Qué vigilar
-- Evolución de Luis Rioja antes del cierre de jornada: está en duda y es tuyo, con caída de valor esta jornada.
-- Seguimiento de la lesión de Kike García, sin puntos ni minutos registrados aún.
-- Las cláusulas asequibles de Oriol Rey (1.543.500 €) y Nacho Pérez (5.155.500 €) siguen abiertas: son las de menor coste con producción de puntos entre las top listadas hoy.
+- Estado de Luis Rioja antes del partido ante el Celta de Vigo: si pasa a `ok`, se puede alinear y capitanear con normalidad; si pasa a `injury` o sigue `doubt` cerca del partido, dejarlo fuera.
+- Estado de Kike García antes de recibir al Real Madrid: si pasa a `ok`, replantear su titularidad; mientras siga `injury`, descartarlo.
+- `medias_fiables`: en cuanto pase a `true` con más jornadas, se podrá usar `media`/`media_por_millon` para elegir capitán y objetivos de fichaje con criterio de rendimiento, no solo por posición o coste.
+
+Nota: no hay dato de probabilidad de gol/expected goals en el brief, así que la elección de capitán se apoya en posición (DL) como único proxy disponible. Tampoco hay precio de venta explícito para valorar si conviene transferir a Krug o Iturbe (estado `other`). Sobre los 25 blindados de la liga, el brief solo da el agregado, no la lista de jugadores.
