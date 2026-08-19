@@ -1,34 +1,16 @@
 ## Titular
-La plantilla pierde 780.000 € de valor y suma cuatro jugadores tocados (Rioja en duda, Kike García lesionado), mientras el mercado registra la mayor subida del día: Rodri Hernández, +44.000.000 €, sin dueño.
+La plantilla pierde valor (-515.000 €) en un día en el que Luis Rioja, en duda para el partido, es también la mayor caída propia (-571.000 €, -4,02%).
 
 ## Mercado
-De 516 jugadores en el universo, suben 259, bajan 239 y 17 se mantienen igual. Hay 370 libres, 36 lesionados y 21 en duda. El mercado de pujas tiene 43 jugadores, de los cuales 10 son libres y los 43 son asequibles con tu saldo.
-
-Mayor subida: Rodri Hernández (MC), 44.000.000 €, +44.000.000 € (sin dueño; el brief no registra porcentaje para este movimiento). Le siguen Bernardo Silva (+881.000 €, +2,21%), Sergio Canales (+835.000 €, +4,28%), Juan Iglesias (+654.000 €, +3,48%), Ayoze Pérez (+636.000 €, +4,65%), David Larrubia (+625.000 €, +3,83%), Tyrhys Dolan (+620.000 €, +4,15%) y Aimar Oroz (+567.000 €, +2,90%, propiedad de Gonzalo).
-
-Mayor bajada: Quilindschy Hartman (-712.000 €, -4,12%, de Marcos), Héctor Bellerín (-609.000 €, -3,09%), Aurélien Tchouaméni (-584.000 €, -1,66%), Santiago Mouriño (-553.000 €, -1,91%), Jorge de Frutos (-540.000 €, -1,42%), Alexander Sørloth (-536.000 €, -2,08%), Luis Rioja (-536.000 €, -3,64%, es mío) e Ilaix Moriba (-528.000 €, -2,66%).
-
-`dias_historico` es 1: no hay serie temporal, esto es la foto de un solo día, sin tendencia que analizar.
+De 514 jugadores en el universo, 362 están libres, 36 lesionados y 21 en duda. El reparto del día es casi a la mitad: 250 suben, 248 bajan y 15 se mantienen igual. La mayor subida es Ayoze Pérez (DL, +658.000 €, +4,60%), seguido de David Larrubia (MC, +653.000 €, +3,85%); ninguno tiene dueño. La mayor bajada es Leandro Cabrera (DF, -813.000 €, -4,10%), también sin dueño, seguido de Héctor Bellerín (DF, -787.000 €, -4,12%). Entre los que suben con dueño: Orri Óskarsson (DL, +548.000 €, +2,89%, de Mateo) y Lorenzo Amatucci (MC, +533.000 €, +3,17%, de Martín); ninguno de los dos es nuestro.
 
 ## Oportunidades
-Del universo, 131 jugadores tienen dueño y 130 son asequibles con tu saldo. La cláusula más barata es 1.000.000 €.
-
-Cláusulas destacadas (según el brief): Oriol Rey (MC, de William), cláusula 1.198.500 €, sobrecoste 1,5x, media 3, media_por_millon 2,50. Nacho Pérez (DF, de Pablo), cláusula 4.480.000 €, sobrecoste 3,5x, media 6, media_por_millon 1,34. Carlos Macia (MC, de Marcos), cláusula 3.048.000 €, sobrecoste 1,5x, media 4, media_por_millon 1,31. Unai Núñez (DF, de William), cláusula 6.706.500 €, sobrecoste 1,5x, media 7, media_por_millon 1,04. Paco Cortés (MC, de Marcos), cláusula 1.000.000 € (suelo), sobrecoste 2,70x, media 1. Pelayo Fernández (DF, de Mateo), cláusula 1.000.000 € (suelo), sobrecoste 2,79x, media 1. Bright Ede (DF, de Michal), cláusula 4.005.000 €, sobrecoste 1,5x, media 4. Fran Pérez (MC, de Pablo), cláusula 2.176.500 €, sobrecoste 1,5x, media 2.
-
-En el mercado de pujas: Ander Guevara (MC), precio de salida 329.000 €, descuento 19,16% sobre su valor. Marash Kumbulla (DF), 1.287.000 €, descuento 15,44%, pero está lesionado (estado injury). Marcão (DF), 329.000 €, descuento 14,55%. Dani Barcia (DF), 329.000 €, descuento 12,73%. Péter Gulácsi (PT), 3.469.000 €, descuento 8,88%. Fran Pérez (MC), 1.331.000 €, descuento 8,27%, media 2. Abde Rebbach (MC), 5.453.000 €, descuento 7,12%, media 5. Hamza Abdelkarim (DL), 5.261.000 €, descuento 6,05%.
-
-Saldo disponible: 94.587.000 €.
+137 jugadores tienen dueño y 136 de esas cláusulas son asequibles con nuestro saldo (94.587.000 €); la cláusula más barata del mercado es de 1.000.000 €. Mejor relación puntos/cláusula: Oriol Rey (MC, de William), media 3, cláusula 1.543.500 €, 1,94 puntos por millón. Le siguen Nacho Pérez (DF, de Pablo), media 6, cláusula 5.155.500 €, 1,16 puntos por millón, y Unai Núñez (DF, de William), media 7, cláusula 6.979.500 €, 1,00 puntos por millón. En el mercado libre, el mayor descuento es Marash Kumbulla (DF, -26,67%, precio de salida 1.287.000 €), pero está lesionado. Con mejor relación estado/precio: Fran Pérez (MC, -11,27%, precio 1.331.000 €, media 2, ok) y Abde Rebbach (MC, -10,74%, precio 5.453.000 €, media 5, ok).
 
 ## Tu plantilla
-15 jugadores, valor total 104.277.000 €, con una caída de 780.000 € hoy. Riesgo total si te clausulan a todos: 158.171.500 €. Cuatro jugadores tocados.
-
-Alertas: Luis Rioja (MC, duda, 14.191.000 €, -536.000 €/-3,64% hoy), Kike García (DL, lesionado, 6.192.000 €, -308.000 €/-4,74%), Alejandro Iturbe (PT, estado "other", 393.000 €, -18.000 €), Martín Krug (DF, estado "other", 329.000 €, -88.000 €/-21,10%, la mayor caída porcentual de la plantilla).
-
-En positivo: Kike Barja +103.000 € (+30,12%), Filip Ugrinic +120.000 € (+3,15%), Alemão +110.000 € (+1,46%).
-
-Puntos del día por jugador: Alemão 5, Augusto Batalla 3, Lucas Cepeda 2; el resto a 0, incluidos Rioja (duda) y Kike García (lesionado). Con `dias_historico` en 1 no hay comparación posible con jornadas anteriores.
+Valor total: 103.762.000 €, -515.000 € en el día. Riesgo de cláusula (coste para un rival de rescindir a toda la plantilla): 157.034.500 €. Cuatro jugadores tocados: Luis Rioja en duda (-571.000 €, -4,02%, cláusula 20.430.000 €), Kike García lesionado (-310.000 €, -5,01%, cláusula 8.823.000 €), y Martín Krug (+148.000 €, +44,98%) y Alejandro Iturbe (-46.000 €, -11,70%), ambos en estado "other". El resto de la plantilla está "ok".
 
 ## Qué vigilar
-- Evolución de Luis Rioja antes del cierre de la próxima jornada: sigue en estado de duda.
-- Parte médico de Kike García, lesionado y sin puntuar.
-- La tabla de liga marca 0 puntos para los 10 managers pese a que jugadores de tu plantilla ya han puntuado (Alemão, Batalla, Cepeda): confirmar si la clasificación aún no se ha actualizado.
+1. Estado de Luis Rioja antes del partido: en duda y ya es la mayor bajada de valor propia del día.
+2. Evolución de la lesión de Kike García.
+3. Qué significa el estado "other" de Martín Krug y Alejandro Iturbe: el brief no lo especifica.
