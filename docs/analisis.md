@@ -1,44 +1,45 @@
+**Aviso de fiabilidad:** el brief de hoy trae dos problemas señalados en `validaciones`: "la plantilla tiene 14 jugadores, no 15" y "valores no finitos en campos que no deberian estarlo: sobrecoste (x14)". Las cifras de plantilla y de cláusulas de hoy pueden no ser fiables en esos puntos.
+
 ## Titular
-El mercado cierra en unas 16,1 horas para los 40 candidatos que tengo delante; el mejor descuento entre los que están `ok` es Hamza Abdelkarim (DL, -9,04%, 5.261.000 € por un jugador de 5.784.000 €).
+El mercado cierra en 16,3 horas y, entre los 12 candidatos que tengo delante (de 20 en total), Miguel Sierra (MC, 11 puntos en sus 2 jornadas disputadas, 4.125.000 €) es el más sólido.
 
 ## Decisión
-Capitán: Alemão (DL). Es el único delantero sano de la plantilla (Kike García está `injury`); hizo 5 puntos en su único partido y vuelve a jugar en casa ante Alavés. No hay dato de probabilidad de gol en el brief, así que la posición es el mejor proxy disponible.
-
-No fichar hoy pese al cierre de mercado: entre los jugadores `ok` el mayor descuento visible es del 9,04% (Hamza Abdelkarim) y solo hay 1 jornada de datos — no justifica gastar de los 94.587.000 € de saldo. El descuento más alto de la lista (Marash Kumbulla, -26,67%) es sobre un jugador `injury`, no una ganga.
-
-No rescindir cláusulas hoy: `clausulas_top` está ordenada por coste, no por calidad ("clausula (media no fiable con 1 jornadas)"), y las medias no son fiables todavía. No hay ningún candidato ahí que destaque por rendimiento.
-
-No alinear a Kike García (injury) ante el Real Madrid mientras mantenga ese estado. Vigilar a Luis Rioja (doubt) antes de recibir al Celta de Vigo: si sigue en duda cerca del partido, no capitanearlo ni forzar su titularidad.
+- **Fichaje:** Miguel Sierra (MC), 4.125.000 €, cierra en 16,3 horas. Es el único candidato del mercado con nota en las dos jornadas disputadas (11 puntos), muy por debajo del saldo disponible (58.543.000 €). Recomendado antes del cierre.
+- **Alineación:** Kike Salas (DF) está en estado "red" (sancionado) para el partido en casa ante Atlético de Madrid — no se puede alinear. Augusto Batalla (PT) está "injury" y su equipo visita al FC Barcelona — buscar alternativa en portería antes de la próxima alineación; el brief no da fecha exacta del cierre de alineaciones. Adrián Niño (DL) sigue "injury". Facundo Garcés (DF) está en "other" (sin ficha/no convocado), no disponible.
+- **Capitán:** `capitan_activo` es `true`, toca elegir. `medias_fiables` es `false`, así que no se puede ordenar por media, y el brief no trae dato de probabilidad de gol. Con esa limitación, el único criterio disponible en bruto es el reparto de puntos por jornada: Ángel Pérez (MC) suma 12 puntos en sus 2 jornadas con nota, el registro más consistente de la plantilla entre los jugadores en estado "ok", con partido en casa ante Villarreal. Candidato a capitán, con la reserva de que la muestra son solo 2 jornadas.
+- Nada más exige acción hoy en el resto de la plantilla.
 
 ## Ventana de mercado
-Los 40 candidatos del mercado cierran en ~16,1 horas (veo 12 de esos 40):
-- Marash Kumbulla (DF) — descuento 26,67%, estado `injury`, no libre.
-- Marcão (DF) — descuento 10,84%, estado `other`, no libre.
-- Hamza Abdelkarim (DL) — descuento 9,04%, estado `ok`, no libre.
-- Asier Villalibre (DL) — descuento 6,31%, estado `ok`, no libre.
-- Eduardo Camavinga (MC) — descuento 1,77%, estado `ok`, no libre.
-- Sin descuento (precio = valor): Christantus Uche (DL, injury, libre), Gavi (MC, ok, libre), Rubén García (MC, ok, libre), Gabriel Moscardo (MC, ok, libre), Rodrigo Mendoza (MC, ok, libre), Carlos Martín (MC, ok, libre), Yvan Neyou (MC, other, no libre).
+Los 12 candidatos que tengo delante cierran todos en 16,3 horas (todos "asequible", sin descuento sobre su valor):
+- Miguel Sierra (MC) — 4.125.000 € — 11 puntos en 2 jornadas
+- Gerard Martín (DF) — 24.753.000 € — 10 puntos en su único partido
+- Martín Satriano (DL) — 26.015.000 € — 9 puntos en 2 jornadas
+- Jesús Vázquez (DF) — 2.663.000 € — 7 puntos en su único partido
+- José Luis Gayà (DF) — 10.511.000 € — 6 puntos en su único partido
+- Jonathan Asp Jensen (MC) — 5.924.000 € — 5 puntos en su único partido
+- Chupete (DL) — 25.769.000 € — 2 puntos en su único partido
+- Johnny Cardoso (MC) — 3.917.000 € — sin nota todavía
+- Davinchi (DF) — 5.142.000 € — sin nota todavía
+- Thiago Pitarch (MC) — 1.343.000 € — "injury", sin nota
+- Unai Vencedor (MC) — 493.000 € — "other", sin nota
+- Thomas Lemar (MC) — 329.000 € — "other", sin nota
 
 ## Nuestra plantilla
-Estados distintos de `ok` (4 de 15):
-- Luis Rioja (MC) — `doubt`. Rival: Celta de Vigo, en casa. Valor 13.620.000 €, cláusula 20.430.000 €.
-- Kike García (DL) — `injury`. Rival: Real Madrid, en casa. Valor 5.882.000 €, cláusula 8.823.000 €.
-- Martín Krug (DF) — `other`. Rival: Osasuna, fuera. Valor 477.000 €, cláusula 1.000.000 €.
-- Alejandro Iturbe (PT) — `other`. Rival: FC Barcelona, en casa. Valor 347.000 €, cláusula 1.000.000 €.
+Cuatro jugadores en estado distinto de "ok" (de los 14 que trae el brief, no 15 según la validación de arriba):
+- Augusto Batalla (PT) — "injury" — rival: FC Barcelona, fuera.
+- Kike Salas (DF) — "red" — rival: Atlético de Madrid, en casa.
+- Adrián Niño (DL) — "injury" — rival: Deportivo de A Coruña, en casa.
+- Facundo Garcés (DF) — "other" — rival: Villarreal, en casa.
 
-Exposición a cláusula: los 15 están sin blindar (`sin_blindar: 15`). El más expuesto por valor es Augusto Batalla, según `mas_expuesto` (cláusula 40.479.000 €, sobrecoste 1,5×, el mínimo posible).
+Exposición a cláusula: los 14 están sin blindar (`sin_blindar: 14`). No hay datos de cláusula hoy (`clausulas_resumen.con_dueno: 0`, `clausulas_top` vacío), así que no se puede afirmar qué rival podría rescindir a quién. Los más caros y sin blindar son Augusto Batalla (24.749.000 €) y Javi Guerra (24.744.000 €), ambos también bajan de valor hoy, pero sin dato de cláusula no hay forma de valorar riesgo real.
 
 ## La liga
-Posición 10ª de 10, pero todos los mánagers tienen 0 puntos: la jornada no ha consolidado y esa posición es provisional. Por valor de plantilla vamos 6º de 10 (`rank_valor`), con 103.762.000 €. El líder en valor es Gonzalo (`rank_valor` 1), con 187.291.000 €.
-
-De los jugadores con dueño, 25 de 138 están blindados, pero el brief no me dice cuáles en los datos que tengo delante (los de `clausulas_top` están todos sin blindar). Dos jugadores en manos de rivales suben por encima del umbral: Orri Óskarsson (DL, dueño Mateo) +548.000 € (+2,89%) y Lorenzo Amatucci (MC, dueño Martín) +533.000 € (+3,17%).
+Estamos en la posición 8537 de la tabla, con 144.035.000 € de valor de plantilla (`rank_valor: 83`) y 57 puntos. El líder, Ander, tiene 162 puntos y 374.208.000 € de valor de plantilla. No hay datos de cláusulas hoy (`con_dueno: 0`), así que no se puede decir qué rivales han blindado a quién.
 
 ## Calendario
-Varios jugadores nuestros reciben a rivales fuertes esta jornada: Lucas Cepeda y Alejandro Iturbe (este último `other`) juegan en casa ante el FC Barcelona (valor medio de su plantilla 28.257.153 €); Kike García (`injury`) recibe al Real Madrid, el equipo con mayor valor medio de plantilla del calendario que tengo delante (29.573.230 €). Álex Pastor visita al Atlético de Madrid (valor medio 18.654.964 €).
+Tres de los nuestros (Lucas Boyé, Ángel Pérez, Facundo Garcés) reciben en casa a Villarreal, el rival de mayor valor medio de plantilla entre los que enfrentamos esta jornada después del Barcelona (18.744.217 €). Dos más (Kike Salas, Lucien Agoumé) reciben al Atlético de Madrid (18.219.551 €). Augusto Batalla visita al FC Barcelona, el equipo de mayor valor medio de todo el calendario que tengo delante (27.337.142 €), aunque está de baja y no jugará.
 
 ## Qué vigilar
-- Estado de Luis Rioja antes del partido ante el Celta de Vigo: si pasa a `ok`, se puede alinear y capitanear con normalidad; si pasa a `injury` o sigue `doubt` cerca del partido, dejarlo fuera.
-- Estado de Kike García antes de recibir al Real Madrid: si pasa a `ok`, replantear su titularidad; mientras siga `injury`, descartarlo.
-- `medias_fiables`: en cuanto pase a `true` con más jornadas, se podrá usar `media`/`media_por_millon` para elegir capitán y objetivos de fichaje con criterio de rendimiento, no solo por posición o coste.
-
-Nota: no hay dato de probabilidad de gol/expected goals en el brief, así que la elección de capitán se apoya en posición (DL) como único proxy disponible. Tampoco hay precio de venta explícito para valorar si conviene transferir a Krug o Iturbe (estado `other`). Sobre los 25 blindados de la liga, el brief solo da el agregado, no la lista de jugadores.
+- Estado de Augusto Batalla: si pasa de "injury" a "ok" antes del partido ante el Barcelona, replantear si merece la pena alinearlo pese al rival; si sigue "injury", asumir la baja y no contar con él.
+- Datos de cláusula: hoy `con_dueno` es 0 y no hay `clausulas_top`. En cuanto el brief vuelva a traer candidatos con dueño, revisar la exposición real de Batalla y Javi Guerra, los más caros y sin blindar de la plantilla.
+- Recuento de plantilla: el brief señala 14 jugadores en vez de 15. Si el próximo brief sigue en 14, confirmar si es un hueco real de fichaje o un fallo de los datos.
