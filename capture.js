@@ -1,22 +1,6 @@
-/* Alcorcojos FC - captura diaria.
- * Pegar en la consola de Chrome estando logueado en fantasy.marca.com.
- * Rellena CONFIG antes del primer uso.
- *
- * Cambios respecto a la version anterior:
- *  - Los filtros de rango ya no tienen tope. El anterior (81.300.000) estaba
- *    a 127.000 EUR del jugador mas caro: el primer dia que subiera, habria
- *    desaparecido del universo sin error ninguno.
- *  - Se borran nombre y email de las tres paginas HTML antes de subirlas.
- *    La limpieza anterior solo tocaba cfg.context.user; el email seguia
- *    apareciendo tres veces por pagina (en _FG_cfg.user y en _FG_user).
- *  - Se captura tambien /search, por si el selector de equipos permite
- *    construir el diccionario id->nombre sin rellenarlo a mano.
- *  - Se avisa por consola si el numero de jugadores baja respecto al valor
- *    esperado, que es la senal de que un filtro esta recortando el universo.
- */
 (async () => {
   const CONFIG = {
-    owner: 'TU_USUARIO_GITHUB',
+    owner: 'albertosaiz16',
     repo: 'alcorcojos-fc',
     token: 'github_pat_XXXX',
     minJugadores: 500,   // sube esto si el universo crece; si baja, algo corta
@@ -76,7 +60,9 @@
     });
     const t = await r.text();
     if (t.length < 200) break;
-    out.chunks.push({ offset: off, html: t });
+    // anonimizar() tambien limpia esto: /ajax/sw/players puede traer el
+    // nombre/email del propietario dentro del objeto del jugador.
+    out.chunks.push({ offset: off, html: anonimizar(t) });
     try { nJugadores += JSON.parse(t).data.players.length; } catch (e) { /* */ }
     await new Promise(s => setTimeout(s, 300));
   }

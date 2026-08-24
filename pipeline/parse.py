@@ -39,11 +39,14 @@ def parse_players(raw):
             "media": p["avg"],
             "jornadas_con_nota": len(streak),
             "estado": p["status"] or "ok",
-            "id_dueno": p["id_uc"],
-            "dueno": p["uc_name"],
-            "es_mio": bool(p["is_mine"]),
-            "escudo": bool(p["shield"]),
-            "rank_clausula": p["clausesRank"],
+            # Agentes libres: la API simplemente omite estos campos, no
+            # llegan a null. Sin .get() cualquier jugador sin dueño tumbaba
+            # el parseo entero.
+            "id_dueno": p.get("id_uc"),
+            "dueno": p.get("uc_name"),
+            "es_mio": bool(p.get("is_mine")),
+            "escudo": bool(p.get("shield")),
+            "rank_clausula": p.get("clausesRank"),
             "rival": match.get("rival_team_id"),
             "local": match.get("is_home"),
         })
